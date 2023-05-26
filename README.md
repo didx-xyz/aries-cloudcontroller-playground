@@ -1,5 +1,5 @@
 ![didx-logo](https://github.com/didx-xyz/didx-xyz.github.io/blob/832354b9a13f27d19ade5a6678f01c1eea530ce3/assets/images/logo/didx-logo-dark-large.png)
-<img src="https://github.com/didx-xyz/didx-xyz.github.io/blob/832354b9a13f27d19ade5a6678f01c1eea530ce3/assets/images/logo/didx-logo-dark-large.png" width="200" />
+<img src="https://github.com/didx-xyz/didx-xyz.github.io/blob/832354b9a13f27d19ade5a6678f01c1eea530ce3/assets/images/logo/didx-logo-dark-large.png" width="400" />
 
 # Aries Cloud Controller Python (Acc-Py)
 
