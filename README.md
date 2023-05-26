@@ -4,12 +4,6 @@
 
 In this repo we are creating a set of libraries to facilitate education and experimentation with the Hyperledger Aries framework for implementing secure identification and authentication procedures using Decentralised Identifiers(DIDs) and Verifiable Credentials (VCs).
 
-Ultimately we are exploring how to create a [Distributed Trust System for Privacy Preserving Machine Learning](https://arxiv.org/abs/2006.02456) that can work with PySyft. We're using HL-Aries Agents to establish an end-end encrypted channel which will facilitate syft communications. We can then extend this with credentials and governance systems.
-
-![Endgame](./images/endgame.png)
-
-**This is very experimental at this stage.**
-
 ## Requirements
 This project is written in Python and is displayed in jupyter notebooks.
 
@@ -25,7 +19,7 @@ Verify that **s2i** is in your PATH.  If not, then edit your PATH and add the di
 
 Ensure that Docker is running. If it is not try `sudo dockerd` in another terminal.
 
-## Running a Tutorial or Project
+## Running a Tutorial
 
 You should now be able to run any of the tutorials or projects within this repo.
 
@@ -67,9 +61,10 @@ In this series you will learn mainly three things. Firstly, we show how to creat
 ## Libraries
 
 
-### [aries-basic-controller](./libs/aries-basic-controller)
+### [aries-cloudcontroller-python](https://github.com/didx-xyz/aries-cloudcontroller-python)
 
-This is the core library in this repository. It is a simple python wrapper for the swagger api interface to an [aca-py ssi agent](https://github.com/hyperledger/aries-cloudagent-python). 
+This is the core library that started in this repository but have subsequently been developed into a fully fledged Python controller library for Aca-Py.
+It is a simple python wrapper for the swagger api interface to an [aca-py ssi agent](https://github.com/hyperledger/aries-cloudagent-python). 
 
 ### [acapy-protocol-example](./libs/acapy-protocol-example)
 
@@ -82,25 +77,3 @@ This library implements a basic attachment acapy protocol plugin using decorator
 ### [attachment-controller](./libs/attachment-controller)
 
 This library extends the basic controller to include the attachment protocol endpoints.
-
-## Projects
-
-### [Aries-FL](./projects/aries-fl)
-
-An example of authenticated federated learning mediated by aries agents communicating over DIDComm.
-
-### [Opus](./projects/opus)
-
-SSI Third Party Credential Onboarding.
-
-### [PryVote](./projects/pryvote)
-
-SSI voting system.
-
-### [Doctors in Training](./projects/doctors-in-training)
-
-A real life use case of SSI developed as part of an NHS INTEROpen hackathon.
-
-### [Single Agent](./project/single-agent)
-
-This spins up a single agent (with attachment capability) pointing to the Sovrin StagingNet and publicly exposed using Ngrok. It includes an associated notebook. Our thought is you could use this to experiment with interoperability of other aries agents. For example aca-pico.
