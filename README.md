@@ -1,10 +1,6 @@
-![om-logo](https://github.com/OpenMined/design-assets/blob/master/logos/OM/horizontal-primary-trans.png)
-![Tests](https://github.com/OpenMined/PyVertical/workflows/Tests/badge.svg?branch=master)
-![License](https://img.shields.io/github/license/OpenMined/PyVertical)
-![OpenCollective](https://img.shields.io/opencollective/all/openmined)
+![didx-logo](https://github.com/didx-xyz/didx-xyz.github.io/blob/e4248fc788b46677235508719f051e97643c2f3d/assets/images/logo/didxlogo.png)
 
-
-# PyDentity
+# Aries Cloud Controller Python (Acc-Py)
 
 In this repo we are creating a set of libraries to facilitate education and experimentation with the Hyperledger Aries framework for implementing secure identification and authentication procedures using Decentralised Identifiers(DIDs) and Verifiable Credentials (VCs).
 
