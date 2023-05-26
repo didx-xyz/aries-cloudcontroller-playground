@@ -7,13 +7,12 @@ ENV env_jupyter_port=jupyter_port
 
 # Setup workspace environment
 RUN apt-get update && apt-get install -y gcc
-# RUN conda install -c conda-forge jupyterlab==4.0.0
 RUN conda install -c conda-forge jupyterlab==4.0.0
-ADD libs/aries-basic-controller .
+#ADD libs/aries-basic-controller .
 
 #
 #
-RUN pip install --no-cache-dir -e .
+#RUN pip install --no-cache-dir -e .
 #RUN pip install -r requirements.txt
 
 #RUN pip install aiohttp
@@ -27,10 +26,6 @@ WORKDIR $WORKSPACE
 # Make the image start the jupyer notebook
 COPY scripts/jupyter-entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
-
-
-
-
 
 # ENTRYPOINT ["/entrypoint.sh", "$env_jupyter_port"]
 ENTRYPOINT ["/entrypoint.sh", "8888"]
